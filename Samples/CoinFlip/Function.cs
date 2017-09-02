@@ -18,7 +18,7 @@ namespace CoinFlip
                 return ResponseBuilder.Empty();
             }
 
-            var result = new Random().Next(0, 1) == 0 ? "head" : "tails";
+            var result = new Random().Next(0, 2) == 0 ? "heads" : "tails";
             var resultText = $"Certainly. And the result is. {result}";
 
             var speech = new PlainTextOutputSpeech {Text = resultText};
